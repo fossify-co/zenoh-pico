@@ -23,10 +23,10 @@ jobs:
 
     - name: Upload SBOM to Dependency-Track
       run: |
-        curl -X "POST" "http://34.72.167.221:8080/api/v1/bom" \
-        -H "X-Api-Key: odt_7a1jpM3mqvJNzMR6l476xDoORm1KwbqJ" \
+        curl -X "POST" "http://34.28.179.30:8080/api/v1/bom" \
+        -H "X-Api-Key: odt_vUlbhnyYbJ89ZGKBqg3XgZYIFDCNRkBJ" \
         -H "Content-Type: multipart/form-data" \
-        -F "project=b0c2f94f-f77f-4c4c-bbb0-9522c9907eae" \
+        -F "project=c5a832da-fba5-41f3-988c-32c9a9678d05" \
         -F "bom=@sbom.json"
 
     - name: Upload SBOM  artifact
